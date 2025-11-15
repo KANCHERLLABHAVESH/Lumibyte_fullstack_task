@@ -44,6 +44,6 @@ app.post("/api/session/:id/ask", (req, res) => {
   res.json(response);
 });
 
-app.listen(PORT, () => {
-  console.log(`Mock API server running on http://localhost:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Mock API server running on port ${PORT}`);
 });
